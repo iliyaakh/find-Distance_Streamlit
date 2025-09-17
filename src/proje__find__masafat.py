@@ -61,8 +61,8 @@ setting = st.sidebar.selectbox('diagrees', ('Distance','Delete from history','De
 if setting == 'Distance':
     st.title('Welcom to your Website')
     st.write('How far is it from you to anywhere in Iran? We will tell you.')
-    origin = st.text_input('Enter your first city (farsi) : ')
-    destination = st.text_input('Enter your second city (farsi) : ')
+    origin = st.text_input('Enter your first city (farsi) : ').strip()
+    destination = st.text_input('Enter your second city (farsi) : ').strip()
 
     if origin and destination:
         result = get_city(origin ,destination)
