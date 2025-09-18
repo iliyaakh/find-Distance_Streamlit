@@ -69,7 +69,7 @@ if setting == 'Distance':
         if result == None:
             st.error('Error : requests conection')
         elif result == 'page not finde':
-            st.error('Error : Invalid name city')
+            st.error('Error : please try again')
         elif result == 'مبدا و یا مقصد مورد نظر در لیست ما وجود ندارد':
             st.error('Error : Destination or origin is invalid')
         else:
